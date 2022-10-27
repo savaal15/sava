@@ -16,24 +16,28 @@ h1{
 .header .button {
   width: 250px;
 }
-/*
-/.button {
-    height: 20px;
-    padding: 0;
-    background: transparent;
-    font-size: 16px;
-    line-height: 20px;
-    color: white;
-}
 
-.button--red {
+.container{
+  width: 250px;
+  height: 150px;
 
-  color: white;
+   margin: 0 auto;
+   border: 5px solid gray;
+   background-color: lightblue;
 }
+.child {
+  width: 40%;
+  height: 100%;
+margin: 0 auto;
+  background-color: lightcoral;
+}
+.borders{
+  width: 270px;
+ height: 120px;
+ margin: 0 auto;
 
-.popup__button{
-  margin: 0 10px;
+ border-top: 5px solid gray;
+ border-right: 6px dashed red;
+ border-bottom: 7px dotted blue;
+ border-left: 8px double green;
 }
-.popup__button--no-margin{
-  margin: 0;
-}*/
