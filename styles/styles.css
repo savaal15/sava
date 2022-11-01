@@ -1,43 +1,49 @@
-
-h1{
-  color: red;
-}
-.button {
-  width: 150px;
-  height: 50px;
-}
-/* Стили оформления элемента*/
-.button-red {
-  background: red;
-  color: white;
-  border: 1px solid black;
-}
-/* Стили содержимого */
-.header .button {
-  width: 250px;
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.container{
-  width: 250px;
-  height: 150px;
-
-   margin: 0 auto;
-   border: 5px solid gray;
-   background-color: lightblue;
+.body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 147px;
 }
-.child {
-  width: 40%;
-  height: 100%;
-margin: 0 auto;
-  background-color: lightcoral;
-}
-.borders{
-  width: 270px;
- height: 120px;
- margin: 0 auto;
 
- border-top: 5px solid gray;
- border-right: 6px dashed red;
- border-bottom: 7px dotted blue;
- border-left: 8px double green;
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 147px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(222, 222, 222, 0.5);
+  background-filter: blur(20px);
+  z-index: 100;
+
+
+}
+
+.page-header__container{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1414px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.main {
+  flex: 1 0 auto;
+  background-color: coral;
+}
+
+.page-footer {
+  flex: 0 0 auto;
+  background-color: gray;
 }
