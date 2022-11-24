@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-  @@include('blocks/head.html')
+<head>
+  <meta charset="UTF-8" />
+  <title>Название</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <body class="body">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
 
-    @@include('blocks/page-header.html')
+<body class="body">
+
+  <header class="page-header">
+    <div class="page-header__container">
+      <a href "f.html" class="page-header__logo">
+        <svg class="page-header__logo-icon" width="202" haight="142">
+          <use xlink:href="assets/icons/symbols.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="page-header__nav">
+        <a href="#" class="page-header__nav-link">Мероприятия</a>
+        <a href="#" class="page-header__nav-link">Блог</a>
+        <a href="#" class="page-header__nav-link">О нас</a>
+        <a href="#" class="page-header__nav-link">Контакты</a>
+      </nav>
+
+      <div class="page-header__right-block">
+        <a href="#" class="page-header__btn btn">
+          Войти</a>
+      </div>
+
+
+
+    </div>
+  </header>
 
   <main class="main">
     <div class="events">
@@ -13,13 +43,11 @@
         <h2 class="listing__section-title section-title">
           Мероприятия
         </h2>
-      <div class="listing__events-cards">
-        <article class="events-card">
-          <a href="#" class="events-card__link">
+        <div class="listing__events-cards">
+          <article class="events-card">
+            <a href="#" class="events-card__link">
               <picture class="events-card__picture">
-                <img //*class="events-card__img"*//
-                src="images/img1.jpg"
-                alt="Nirvana"/>
+                <img //*class="events-card__img" *// src="images/img1.jpg" alt="Nirvana" />
               </picture>
               <h4 class="events-card__title">
                 Собираемся и слушаем альбом Nirvana. Nirvana
@@ -30,14 +58,12 @@
               <time class="events-card__time" datetime="2022-12-07T18:00">
                 07.12.2022 | начало 18.00
               </time>
-          </a>
-        </article>
-        <article class="events-card">
-          <a href="#" class="events-card__link">
+            </a>
+          </article>
+          <article class="events-card">
+            <a href="#" class="events-card__link">
               <picture class="events-card__picture">
-                <img //*class="events-card__img"*//
-                src="images/img1.jpg"
-                alt="Nirvana"/>
+                <img //*class="events-card__img" *// src="images/img1.jpg" alt="Nirvana" />
               </picture>
               <h4 class="events-card__title">
                 Собираемся и слушаем альбом Nirvana. Nirvana
@@ -48,14 +74,12 @@
               <time class="events-card__time" datetime="2022-12-07T18:00">
                 07.12.2022 | начало 18.00
               </time>
-          </a>
-        </article>
-        <article class="events-card">
-          <a href="#" class="events-card__link">
+            </a>
+          </article>
+          <article class="events-card">
+            <a href="#" class="events-card__link">
               <picture class="events-card__picture">
-                <img //*class="events-card__img"*//
-                src="images/img1.jpg"
-                alt="Nirvana"/>
+                <img //*class="events-card__img" *// src="images/img1.jpg" alt="Nirvana" />
               </picture>
               <h4 class="events-card__title">
                 Собираемся и слушаем альбом Nirvana. Nirvana
@@ -66,14 +90,12 @@
               <time class="events-card__time" datetime="2022-12-07T18:00">
                 07.12.2022 | начало 18.00
               </time>
-          </a>
-        </article>
-        <article class="events-card">
-          <a href="#" class="events-card__link">
+            </a>
+          </article>
+          <article class="events-card">
+            <a href="#" class="events-card__link">
               <picture class="events-card__picture">
-                <img //*class="events-card__img"*//
-                src="images/img1.jpg"
-                alt="Nirvana"/>
+                <img //*class="events-card__img" *// src="images/img1.jpg" alt="Nirvana" />
               </picture>
               <h4 class="events-card__title">
                 Собираемся и слушаем альбом Nirvana. Nirvana
@@ -84,9 +106,9 @@
               <time class="events-card__time" datetime="2022-12-07T18:00">
                 07.12.2022 | начало 18.00
               </time>
-          </a>
-        </article>
-      </div>
+            </a>
+          </article>
+        </div>
       </div>
     </div>
 
@@ -95,10 +117,12 @@
 
 
   </main>
-  
-  @@include('blocks/page-footer.html')
+
+  <footer class="page-footer">
+
+  </footer>
 
 
-  </body>
+</body>
 
 </html>
