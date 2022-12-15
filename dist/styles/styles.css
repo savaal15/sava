@@ -131,6 +131,100 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.blog-card {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.blog-card__link {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 60px;
+  display: block;
+  max-width: 467px;
+  width: 100%;
+}
+.blog-card__picture {
+  display: block;
+  position: relative;
+}
+.blog-card__picture::before {
+  content: "";
+  display: block;
+  padding-top: 62.312%;
+  width: 100%;
+}
+.blog-card__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.blog-card__info {
+  margin-top: 30px;
+  max-width: 470px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.blog-card__info-time {
+  display: block;
+  margin-bottom: 70px;
+  font-weight: 300;
+  font-size: 16px;
+  color: #1F1E1E;
+}
+.blog-card__title-link {
+  margin-bottom: 40px;
+}
+.blog-card__title-link:hover .blog-card__title,
+.blog-card__title-link:active .blog-card__title,
+.blog-card__title-link:hover .blog-card__icon,
+.blog-card__title-link:active .blog-card__icon {
+  color: #a51505;
+}
+.blog-card__title-link:hover .blog-card__title,
+.blog-card__title-link:active .blog-card__title {
+  text-decoration-color: #a51505;
+}
+.blog-card__title {
+  margin: 0;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  font-weight: 700;
+  color: #1F1E1E;
+  -webkit-transition: color 0.2s, text-decoration-color 0.2s;
+  -o-transition: color 0.2s, text-decoration-color 0.2s;
+  transition: color 0.2s, text-decoration-color 0.2s;
+}
+.blog-card__icon {
+  position: absolute;
+  right: 0;
+  bottom: 90px;
+  display: block;
+  color: #1F1E1E;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.blog-card__text {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #1F1E1E;
+}
 .listing__events-cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,6 +232,12 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 -30px;
+}
+.home {
+  padding: 100px 0;
+}
+.home__listing {
+  margin-bottom: 95px;
 }
 .reserve {
   display: grid;
