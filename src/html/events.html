@@ -17,7 +17,7 @@
        @@loop('blocks/events-card.html',[
        {
         "class": "listing__events-card",
-        "img": "assets/images/events/img1.jpg",
+        "img": "assets/images/img1.jpg",
         "alt": "nirvana",
         "title": "Собираемся и слушаем альбом Nirvana",
         "descr": "Это третий альбом группы...",
@@ -26,25 +26,31 @@
        },
        {
         "class": "listing__events-card",
-        "img": "assets/images/events/img1.jpg",
-        "alt": "nirvana",
-        "title": "Собираемся и слушаем альбом Nirvana",
-        "descr": "Это третий альбом группы...",
-        "time": "07.12.2022 | начало 18.00",
-        "datetime": "2022-12-07T18:00"
+        "img": "assets/images/img2.jpg",
+        "alt": "HowStuffWorks",
+        "title": "Есть тема, нужно обсудить с HowStuffWorks",
+        "descr": "Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.        ",
+        "time": "14.12.2022 | начало 18.30",
+        "datetime": "2022-12-14T18:30"
        },
        {
         "class": "listing__events-card",
-        "img": "assets/images/events/img1.jpg",
-        "alt": "nirvana",
-        "title": "Собираемся и слушаем альбом Nirvana",
-        "descr": "Это третий альбом группы...",
-        "time": "07.12.2022 | начало 18.00",
-        "datetime": "2022-12-07T18:00"
+        "img": "assets/images/img3.jpg",
+        "alt": "sade",
+        "title": "Вечер | The Best of Sade",
+        "descr": "Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза,
+        ритм-блюза и фанка.",
+        "time": " 16.12.2022 | начало 20.00",
+        "datetime": "2022-12-16T20:00"
        }
        ])
       </div>
       </div>
+
+    <div class="events__table">
+      @@include('blocks/table.html')
+    </div>
+
     </div>
 
 
@@ -54,6 +60,8 @@
   </main>
   
   @@include('blocks/page-footer.html')
+  
+  @@include('blocks/event-pp.html')
 
 
   </body>

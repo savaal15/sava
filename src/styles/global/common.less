@@ -10,12 +10,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #dedede;
+    background-color: @grey;
     background-image: url(../assets/images/noise.png), url(../assets/images/bg.png);
     background-position: 0 0, 0 0;
     background-size: auto, 100% auto;
     background-repeat: repeat, repeat-y;
-    color: #1F1E1E;
+    color: @black;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -34,7 +34,7 @@ body {
   }
   
   a {
-    color: #1F1E1E;
+    color: @black;
     outline: none;
     text-decoration: none;
   }
@@ -43,4 +43,32 @@ body {
     max-width: 100%;
     height: auto;
     object-fit: cover;
+  }
+
+  input,
+  textarea,
+  select{
+    box-shadow: none;
+    outline: none;
+    color: @black;
+  }
+  textarea{
+    resize: none;
+  }
+  input,
+  textarea{
+    &::placeholder{
+      color: @grey3;
+      transition: color 0.2s;
+    }
+    &:focus{
+      &::placeholder{
+        color: transparent;
+      }
+    }
+
+    table,
+    td{
+      border: 1px solid #bfbfbf;
+    }
   }
