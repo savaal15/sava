@@ -75,6 +75,52 @@
           ])
         </div>
       </div>
+
+      <div class="events__table">
+        <table class="table">
+          <thead class="table__thead">
+            <tr class="table__thead-tr">
+              <th class="table__th"></th>
+              <th class="table__th">Тариф «Light»</th>
+              <th class="table__th">Тариф «Promo»</th>
+              <th class="table__th">Тариф «All stars»</th>
+            </tr>
+          </thead>
+          <tbody class="table__tbody">
+            <tr class="table_tr">
+              <th class="table__tbody-th">Стоимость за час</th>
+              <th class="table__tbody-th">1 000 ₽</th>
+              <th class="table__tbody-th">3 000 ₽</th>
+              <th class="table__tbody-th">от 6 000 ₽</th>
+            </tr>
+            <tr class="table_tr">
+              <th class="table__tbody-th">Стоимость за час</th>
+              <th class="table__tbody-th">1 000 ₽</th>
+              <th class="table__tbody-th">3 000 ₽</th>
+              <th class="table__tbody-th">от 6 000 ₽</th>
+            </tr>
+            <tr class="table_tr">
+              <th class="table__tbody-th">Стоимость за час</th>
+              <th class="table__tbody-th">1 000 ₽</th>
+              <th class="table__tbody-th">3 000 ₽</th>
+              <th class="table__tbody-th">от 6 000 ₽</th>
+            </tr>
+            <tr class="table_tr">
+              <th class="table__tbody-th">Стоимость за час</th>
+              <th class="table__tbody-th">1 000 ₽</th>
+              <th class="table__tbody-th">3 000 ₽</th>
+              <th class="table__tbody-th">от 6 000 ₽</th>
+            </tr>
+            <tr class="table_tr">
+              <th class="table__tbody-th">Стоимость за час</th>
+              <th class="table__tbody-th">1 000 ₽</th>
+              <th class="table__tbody-th">3 000 ₽</th>
+              <th class="table__tbody-th">от 6 000 ₽</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
     </div>
 
 
@@ -86,6 +132,121 @@
   <footer class="page-footer">
 
   </footer>
+  <div class="pp">
+    <div class="pp__block">
+      <form class="form">
+        <label class="field form__field">
+          <span class="field__title">Заполните форму и
+            мы подберем площадку</span>
+        </label>
+
+        <label class="field form__field">
+          <span class="field__title">Формат мероприятия</span>
+          <div class="form__radio radio">
+            <label class="radio__item">
+              <input type="radio" class="radio__input" name="формат" value="семинар" checked>
+              <span class="radio__mark"></span>
+              <span class="radio__name">Мастер-класс/семинар</span>
+            </label>
+
+            <label class="radio__item">
+              <input type="radio" class="radio__input" name="формат" value="концерт">
+              <span class="radio__mark"></span>
+              <span class="radio__name">Концерт/выступление</span>
+            </label>
+
+            <label class="radio__item">
+              <input type="radio" class="radio__input" name="формат" value="выставка">
+              <span class="radio__mark"></span>
+              <span class="radio__name">Выставка/показ</span>
+            </label>
+
+            <label class="radio__item">
+              <input type="radio" class="radio__input" name="формат" value="другое">
+              <span class="radio__mark"></span>
+              <span class="radio__name">Другое</span>
+            </label>
+        </label>
+
+    </div>
+    <label class="field form__field">
+
+      <span class="field__title">
+        Планируемое количество посетителей:
+      </span>
+      <select name="количество" class="field__select">
+        <option value="20">до 20 человек</option>
+        <option value="100">от 20 до 100 человек</option>
+        <option value="500">от 100 до 500 человек</option>
+        <option value="1000">более 500 человек</option>
+
+      </select>
+    </label>
+
+
+    <label class="field form__field">
+      <span class="field__title">Дата проведения</span>
+      <div class="form__data">
+    </label>
+  </div>
+
+
+
+
+  <label class="field form__field">
+    <span class="field__label">
+      Имя*
+    </span>
+    <input class="field__input" type="text" name="name" required />
+
+  </label>
+
+  <label class="field form__field">
+    <span class="field__label">
+      Фамилия*
+    </span>
+    <input class="field__input" type="text" name="фамилия" required />
+
+  </label>
+
+  <label class="field form__field">
+    <span class="field__label">
+      Телефон*
+    </span>
+    <input class="field__input" type="tel" name="телефон" required />
+
+  </label>
+
+
+  <label class="field form__field">
+    <span class="field__label">
+      Email*
+    </span>
+    <input class="field__input" type="email" name="email" required />
+
+  </label>
+
+  <label class="field form__field">
+    <span class="field__title">
+      Есть пожелания? Напишите нам:
+    </span>
+    <textarea class="field__textarea" name="comment">
+
+                </textarea>
+    <input class="field__input" type="text" name="name" required />
+
+  </label>
+
+  <label class="check">
+    <input type="checkbox" name="согласие" class="check__input" required checked />
+    <span class="check__mark"></span>
+    <span class="check__label check__label--s">Я соглашаюсь с пользовательским соглашением
+      и с политикой использования персональных данных</span>
+  </label>
+  <button type="submit" class="btn">Отправить</button>
+  </form>
+  </div>
+  </div>
 
 
 
