@@ -179,7 +179,7 @@ width: 100%;
 gap: 67px 150px;
 grid-template-columns: 405px  calc(89% - 405px);
 grid-template-areas: 
-"checkbox schem"
+"checkbox scheme"
 "order legend";
 }
 
@@ -187,8 +187,8 @@ grid-template-areas:
   grid-area: checkbox;
   background-color: red;
 }
-.reserve__schem{
-  grid-area: schem;
+.reserve__scheme{
+  grid-area: scheme;
   background-color: yellow;
 }
 .reserve__order{
