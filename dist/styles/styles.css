@@ -16,7 +16,7 @@ body {
           flex-direction: column;
   min-height: 100vh;
   background-color: #dedede;
-  background-image: url(../assets/images/noise.png);
+  background-image: url(../assets/images/noise.png), url(../assets/images/bg.png);
   background-position: 0 0, 0 0;
   background-size: auto, 100% auto;
   background-repeat: repeat, repeat-y;
@@ -255,11 +255,11 @@ textarea td {
           flex-grow: 1;
   margin-right: 0;
 }
-form {
+.form {
   width: 869px;
   max-width: 100%;
 }
-form__list {
+.form__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,18 +269,18 @@ form__list {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-form__field,
-form__group {
+.form__field,
+.form__group {
   width: 100%;
 }
-form__field--w50,
-form__group--w50 {
+.form__field--w50,
+.form__group--w50 {
   width: calc(50% - 30px);
 }
-form__field {
+.form__field {
   margin: 0 0 20px;
 }
-form__check-list {
+.form__check-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,23 +293,23 @@ form__check-list {
           align-items: flex-start;
   margin: 0 0 30px;
 }
-form__check {
+.form__check {
   margin-bottom: 10px;
 }
-form__check:last-child {
+.form__check:last-child {
   margin-bottom: 0;
 }
-form__section {
+.form__section {
   margin: 0 0 20px;
 }
-form__section-title {
+.form__section-title {
   margin: 0 0 10px;
   color: #1F1E1E;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
 }
-form__btns {
+.form__btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,10 +318,10 @@ form__btns {
           align-items: center;
   margin-top: 10px;
 }
-form__submit--w50 {
+.form__submit--w50 {
   width: calc(50% - 30px);
 }
-form__close-btn {
+.form__close-btn {
   margin: 0 auto;
   padding: 4px 0;
   border: none;
@@ -335,7 +335,7 @@ form__close-btn {
   -o-transition: color 0.2s;
   transition: color 0.2s;
 }
-form__close-btn:hover {
+.form__close-btn:hover {
   color: #bc3324;
 }
 .radio {
@@ -422,12 +422,12 @@ form__close-btn:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 2px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   min-height: 24px;
-  padding-top: 2px;
-  padding-left: 40px;
+  padding-left: 24px;
   color: #1F1E1E;
   cursor: pointer;
 }
@@ -484,6 +484,99 @@ form__close-btn:hover {
   font-size: 14px;
   line-height: 19px;
 }
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #dedede;
+  font-family: "Open Sans", sans-serif;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #1F1E1E;
+  text-align: center;
+}
+.table__tr:nth-child(2n-1) {
+  background-color: rgba(31, 30, 30, 0.03);
+}
+.table__th {
+  height: 85px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+.table__footer-th {
+  height: 60px;
+  font-size: 0;
+}
+.table__th,
+.table__footer-th {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  border-right: 1px solid #BFBFBF;
+  text-transform: uppercase;
+}
+.table__th:first-child,
+.table__footer-th:first-child {
+  padding-left: 0;
+}
+.table__th:last-child,
+.table__footer-th:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+.table__body-th {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 50px;
+  padding: 10px 10px 10px 0;
+  border-top: 1px solid #BFBFBF;
+  border-bottom: 1px solid #BFBFBF;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: left;
+}
+.table__td {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #BFBFBF;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+.table__td:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+.ok {
+  display: block;
+  position: relative;
+  width: 26px;
+  height: 26px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #1F1E1E;
+}
+.ok::after {
+  content: "";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 9px;
+  width: 8px;
+  height: 14px;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
 .pp {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -525,7 +618,7 @@ form__close-btn:hover {
   min-width: 280px;
   width: calc(33.333% - 60px);
 }
-.events-card_link {
+.events-card__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -536,20 +629,18 @@ form__close-btn:hover {
   width: 100%;
   text-decoration: none;
 }
-.events-card_picture {
+.events-card__picture {
   display: block;
-  width: 100%;
-  position: relative;
   margin-bottom: 25px;
+  position: relative;
 }
-.events-card_picture::before {
-  content: "";
+.events-card__picture::before {
+  content: '';
   display: block;
   padding-top: 107.16%;
   width: 100%;
 }
-.events-card_img {
-  display: block;
+.events-card__img {
   position: absolute;
   top: 0;
   left: 0;
@@ -557,19 +648,6 @@ form__close-btn:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.events-card_title {
-  margin: 0 0 15px;
-  min-height: 66px;
-  color: #1F1E1E;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 33px;
-  -webkit-text-decoration: underline transparent;
-          text-decoration: underline transparent;
-  -webkit-transition: color 0.2s, text-decoration-color 0.2s;
-  -o-transition: color 0.2s, text-decoration-color 0.2s;
-  transition: color 0.2s, text-decoration-color 0.2s;
 }
 .blog-card {
   -webkit-box-sizing: border-box;
@@ -684,14 +762,14 @@ form__close-btn:hover {
   width: 100%;
   gap: 67px 150px;
   grid-template-columns: 405px calc(89% - 405px);
-  grid-template-areas: "checkbox scheme" "order legend";
+  grid-template-areas: "checkbox schem" "order legend";
 }
 .reserve__checkbox {
   grid-area: checkbox;
   background-color: red;
 }
-.reserve__scheme {
-  grid-area: scheme;
+.reserve__schem {
+  grid-area: schem;
   background-color: yellow;
 }
 .reserve__order {
@@ -710,6 +788,9 @@ form__close-btn:hover {
   width: 100%;
   padding-left: 40px;
   padding-right: 40px;
+}
+.event {
+  padding: 40px 0 150px;
 }
 .page-header {
   position: fixed;
